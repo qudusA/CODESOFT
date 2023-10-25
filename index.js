@@ -99,29 +99,22 @@ const options = {
   weekday: "short",
 };
 
-const locale = navigator.language;
-console.log(locale);
-
-time.textContent = new Intl.DateTimeFormat(locale, options).format(now);
-
-let tim;
+let locale;
 
 select.addEventListener("change", (e) => {
-  console.log(e.target.value);
-  const french = "fr-FR";
-  const english = "en-GB";
-  const arabic = "ar-SA";
-  const locale =
-    e.target.value === "english"
-      ? english
-      : e.target.value === "french"
-      ? french
-      : e.target.value === "arabic"
-      ? arabic
-      : "";
-
-  console.log(time.textContent);
-  tim = new Intl.DateTimeFormat("en.GB", options).format(now);
+  locale = e.target.value;
+  localeFunc(locale);
 });
 
-// time.textContent = tim;
+if (!locale) {
+  locale = navigator.language;
+  time.textContent = new Intl.DateTimeFormat(locale, options).format(now);
+}
+
+localeFunc = (locale) => {
+  console.log(locale);
+  if (locale) {
+    console.log("here");
+    time.textContent = new Intl.DateTimeFormat(locale, options).format(now);
+  }
+};

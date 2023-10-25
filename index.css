@@ -375,3 +375,7 @@ a {
   color: rgb(235, 218, 218);
   white-space: nowrap;
 }
+
+.copy {
+  margin-top: 25px;
+}
