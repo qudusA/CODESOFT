@@ -17,12 +17,13 @@
   </head>
   <body>
     <main class="main-container">
-      <header class="header">
+      <header class="header container">
         <section class="header-section">
           <article class="logo">OLANREWAJU QUDUS ABIODUN</article>
           <article class="tab">
             <button class="tab-child"><a href="#skills">skills</a></button>
             <!-- <button>Open Source</button> -->
+            <button class="tab-child"><a href="#qualification">Qualifications</a></button>
             <button class="tab-child">
               <a href="#proficiency">Proficiency</a>
             </button>
@@ -32,13 +33,25 @@
             <button class="tab-child"><a href="#contact">Contact Me</a></button>
           </article>
         </section>
+        <article class="dark-mode-btn ">
+          <div class="dark-mode-btn2"></div>
+        </article>
       </header>
       <section class="body-container">
-        <section class="about-section">
+        <section class="about-section container">
           <article class="about-section-article">
             <h3 class="about-header">ABOUT</h3>
             <div class="about-section-article-div">
-              <h1>Hi, i'm Qudus</h1>
+              <div class="static-dynamic">
+                <h3 class="static">Hello I'm</h3>
+                <ul class="dynamic">
+                  <li class="li">Qudus Olanrewaju.</li>
+                  <li class="li">A Nodejs BackEnd developer.</li>
+                  <li class="li">A Mechanical Engineer.</li>
+                  <li class="li">A fullstack developer.</li>
+                </ul>
+                <!-- <h1></h1> -->
+              </div>
               <p class="about">
                 Highly motivated Maintenance Engineer with a Mechanical
                 Engineering degree, Adept at troubleshooting, problem-solving,
@@ -55,27 +68,29 @@
                 (MongoDB and Mongoose). I also possess a handful knowledge of
                 node express websocket and socket.io for real time applications.
               </p>
-              <p class="social">
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/qudus-olanrewaju-223598190/"
-                  ><i class="fa-brands fa-linkedin fa-3x"></i>
-                </a>
-                <a target="_blank" href="https://github.com/qudusA"
-                  ><i class="fa-brands fa-github git fa-3x"></i>
-                </a>
-                <a><i class="fa-solid fa-envelope fa-3x"></i></a>
-              </p>
-            </div>
-            <div class="btn-container">
-              <button class="btn">
-                <a href="mailto:olanrewajuqudus5@gmail.com">CONTACT ME</a>
-              </button>
-              <button class="btn">
-                <a href="./Olanrewaju Qudus Abiodun fullstack1 cv.pdf"
-                  >SEE MY RESUME</a
-                >
-              </button>
+              <div class="social-btn">
+                <p class="social">
+                  <a
+                    target="_blank"
+                    href="https://www.linkedin.com/in/qudus-olanrewaju-223598190/"
+                    ><i class="fa-brands fa-linkedin fa-2x"></i>
+                  </a>
+                  <a target="_blank" href="https://github.com/qudusA"
+                    ><i class="fa-brands fa-github git fa-2x"></i>
+                  </a>
+                  <a><i class="fa-solid fa-envelope fa-2x"></i></a>
+                </p>
+                <div class="btn-container">
+                  <button class="btn">
+                    <a href="mailto:olanrewajuqudus5@gmail.com">CONTACT ME</a>
+                  </button>
+                  <button class="btn">
+                    <a href="./Olanrewaju Qudus Abiodun fullstack1 cv.pdf"
+                      >SEE MY RESUME</a
+                    >
+                  </button>
+                </div>
+              </div>
             </div>
           </article>
           <!-- <article class="about-section-img-article">
@@ -88,10 +103,15 @@
           <!-- <img src="./image/cartoon2.jpg" alt="image" sizes="" srcset="" /> -->
           <!-- </article> -->
         </section>
-        <section id="skills" class="skill-section section hidden">
+        <section id="skills" class="skill-section section hidden container">
           <article>
-            <img src="./image/new cartoonjpg.jpg" alt="skill-image" srcset="" />
-          </article>
+            <!-- <img
+              class="img"
+              src="./image/new cartoonjpg.jpg"
+              alt="skill-image"
+              srcset=""
+            />
+          </article> -->
 
           <article class="skill-section-article">
             <h3 class="skill-header">skill</h3>
@@ -99,35 +119,203 @@
             <p>
               CRAZY FULL STACK DEVELOPER WHO WANT TO EXPLORE EVERY TECH STACK.
             </p>
-            <div>
-              <div>
-                <i class="fa-brands fa-css3-alt fa-3x"></i>
-                <i class="fa-brands fa-html5 fa-3x"></i>
-                <i class="fa-brands fa-js fa-3x"></i>
-                <i class="fa-brands fa-node fa-3x"></i>
+            <!-- <article> -->
+              <div class="faa-list">
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-brands fa-css3-alt fa-3x"></i>
+                    <p class="faa-title fa-title">CSS3</p>
+                  </div>
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-brands fa-html5 fa-3x"></i>
+                    <p class="faa-title fa-title">Html5</p>
+                  </div>
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-brands fa-js fa-3x"></i>
+                    <p class="faa-title fa-title">JavaScript</p>
+                  </div>
+
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-brands fa-node fa-3x"></i>
+                    <p class="faa-title fa-title">Nodejs</p>
+                  </div>
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-brands fa-npm fa-3x"></i>
+                    <p class="faa-title fa-title">Node package manager</p>
+                  </div>
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-solid fa-database fa-3x"></i>
+                    <p class="faa-title fa-title">database Management</p>
+                  </div>
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-brands fa-react fa-3x"></i>
+                    <p class="faa-title fa-title">ReactJs</p>
+                  </div>
+                </div>
+                <div class="faa">
+                  <div class="inner-fa">
+                    <i class="fa-solid fa-server fa-3x"></i>
+                    <p class="faa-title fa-title">server side logic</p>
+                  </div>
+                </div>
               </div>
-              <div>
-                <i class="fa-brands fa-npm fa-3x"></i>
-                <i class="fa-solid fa-database fa-3x"></i>
-                <i class="fa-brands fa-react fa-3x"></i>
-                <i class="fa-solid fa-server fa-3x"></i>
-              </div>
-            </div>
-            <ul class="skill">
-              <li>
-                Develop highly interactive Front end/User interface for your web
-                application.
-              </li>
-              <li>
-                Pregressive web applications (PWA) and single page application
-                (SPA).
-              </li>
-              <li>Testing of API and database during and after development.</li>
-              <li>Design and development of RESTfull and GraphQL API.</li>
-            </ul>
+            <!-- </article> -->
+           
           </article>
         </section>
-        <section id="proficiency" class="proficiency-section section hidden">
+
+        <section id="qualification" class="qualification-section section hidden container">
+          <article class="qualifiction-section-article">
+            <h3 class="qualification-header">Qualifications</h3>
+ 
+            <p>My Learning journey </p>
+              <div class="qual-container">
+                <section>
+                  <h4 class="qualificationh4"><i class="fa-solid fa-graduation-cap"></i> Education</h4>
+                  <!-- <article class="qualification"> -->
+                    <div class="row">
+                      <div class="row-height">
+                        <p class="v1"></p>
+                        <p><i class="fa-solid fa-calendar-days"></i> 2024</p>
+                        <p class="v1"></p>
+                      </div>
+                      <div class="qual row-height firstqual">
+                        <h5>
+                          Bachelor In Engineering (BEng)
+                        </h5>
+                        <p class="h5">
+                          Bells University Of Technology, Ota Ogun State.
+                        </p>
+                      <article class="row-height-small">
+                        <div>
+                          <div></div>
+                        </div>
+                        <p class="course">Bachelor in Mechanical Engineering</p>
+                      </article>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="row-height">
+                        <p class="v1"></p>
+                        <p class="year"><i class="fa-solid fa-calendar-days"></i> 2018</p>
+                        <p class="v1"></p>
+                      </div>
+                      <div class="qual row-height">
+                        <h5>
+                          
+                          Higher National Diploma (HND)
+                        </h5>
+                        <p class="h5">
+                          Yaba College Of Technology, Yaba Lagos State.
+                        </p>
+                      <article class="row-height-small">
+
+                        <div>
+                          <div></div>
+                        </div>
+                        <p class="course">Higher Diploma in Mechanical Engineering</p>
+                        
+                      </article>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="row-height">
+                        <p class="v1"></p>
+                        <p class="year"><i class="fa-solid fa-calendar-days"></i> 2015</p>
+                        <p class="v2"></p>
+                      </div>
+                      <div class="qual row-height">
+                        <h5>
+                          
+                          ODINARY National Diploma (OND)
+                        </h5>
+                        <p class="h5">
+                          Moshood Abiola Polytechnic, Ojere Ogun State.
+                        </p>
+                      <article class="row-height-small">
+                        <div>
+                          <div></div>
+                        </div>
+                        <p class="course">Ordinary Diploma in Mechanical Engineering</p>
+                      </article>
+
+                      </div>
+                    </div>
+                    <!-- <div class="qual"></div>
+                    <div class="qual"></div> -->
+                  <!-- </article> -->
+                </section>
+                <section>
+                  <h4 class="qualificationh4"><i class="fa-solid fa-briefcase"></i> Experience</h4>
+                  <div class="row">
+                    <div class="row-height ">
+                      <p class="v1 "></p>
+                      <p><i class="fa-solid fa-calendar-days"></i> 2023</p>
+                      <p class="v1"></p>
+                    </div>
+                    <div class="qual row-height firstqual">
+                      <h5>
+                        web developer Intern
+                      </h5>
+                      
+                      <p class="h5">
+                        CodeSoft
+                      </p>
+                      <article class="row-height-small">
+                      <div>
+                        <div></div>
+                      </div>
+                      <p class="course">Bachelor in Mechanical Engineering</p>
+                    </article>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="row-height">
+                      <p class="v1"></p>
+                      <p><i class="fa-solid fa-calendar-days"></i> 2023</p>
+                      <p class="v2"></p>
+                    </div>
+                    <div class="qual row-height">
+                      <h5>
+                        java BackEnd Developer Intern
+                      </h5>
+                      <p class="h5">
+                        FlexiSaf
+                      </p>
+                      <article class="row-height-small">
+                        
+                        <div>
+                          <div></div>
+                        </div>
+                        <p class="course">Bachelor in Mechanical Engineering</p>
+                      </article>
+                      </div>
+                  </div>
+                </section>
+              </div>
+           
+          </article>
+        </section>
+
+        <section
+          id="proficiency"
+          class="proficiency-section section hidden container"
+        >
           <article>
             <div class="front">
               <h3>FrontEnd development</h3>
@@ -158,11 +346,14 @@
           <article class="proficiency-section-article">
             <h3 class="proficiency-header">Proficiency</h3>
             <p class="proficiency">
-              <img src="./image/cartoon2.jpg" alt="" />
+              <img class="img" src="./image/cartoon2.jpg" alt="" />
             </p>
           </article>
         </section>
-        <section id="project" class="project-section section hidden">
+        <section
+          id="project"
+          class="project-section section hidden container section-1024"
+        >
           <article class="project-section-article">
             <h3 class="project-header">Projects</h3>
             <div class="project">
@@ -177,21 +368,20 @@
                 resources forgery protection was implemented.
               </p>
               <p class="project-details">
-                development of a medical adhetion application using RESTfull api
-                and endpoint is tested using postman, cors header was set to
-                allow resources shearing accross different port. this
+                development of a medical adhesion application using RESTful Api, endpoint is tested using postman, CORS header was set to
+                allow resources shearing across different port. this
                 application provide all functionality one can get using a
-                medical application ranges from booking appointmant with doctor,
-                paying for booked appointment, it give the patient the ability
-                to chech his or her medical history from the app. websocket and
+                medical application ranges from booking appointment with doctor,
+                paying for booked appointment, it gives the patient the ability
+                to check his or her medical history from the app. WebSocket and
                 socket io is use to notify the hospital when an appointment is
                 booked.
               </p>
               <p class="project-details">
                 Development of a event booking application using GraphQL which
-                have more advantage over rest api has it has one endpoint and
+                have more advantage over RESTful api, it has one endpoint and
                 there is no over fetching and under fetching of data which we
-                gats from rest api's, this app uses the conventional function
+                gets from RESful api's, this app uses the conventional function
                 binding which give use the ability do drill as we like into a
                 mongodb database as oppose to the pupulate method.
               </p>
@@ -235,13 +425,17 @@
         </section>-->
       </section>
       <footer id="contact" class="footer section hidden">
-        <article class="footer-article">
+        <article class="footer-article container">
           <!-- <h3>footer/contact me</h3> -->
           <!-- <p>reach out to me</p> -->
           <ul>
-            <li>Reach out to me</li>
-            <li><a href="tel:07035778352"> 07035778452</a></li>
+            <li>Contact me</li>
             <li>
+              <i class="fa-solid fa-phone"></i>
+              <a href="tel:07035778352"> 07035778452</a>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
               <a href="mailto:olanrewajuqudus5@gmail.com"
                 >olanrewajuqudus5@gmail.com</a
               >
