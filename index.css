@@ -709,26 +709,25 @@ h1,
 
 .project-section-article {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
 }
 
 .project-header {
   padding-bottom: 30px;
 }
 
-.project {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
-}
-
 .project-details {
   width: 300px;
-  /* height: 300px; */
+  height: 300px;
   box-shadow: var(--box-shadow-1px--);
   text-align: center;
   padding: 10px;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
