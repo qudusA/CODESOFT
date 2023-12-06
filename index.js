@@ -55,7 +55,7 @@ headerContainer.addEventListener("click", (e) => {
   //   behavior: "smooth",
   // });
 
-  document.querySelector(att).scrollIntoView({ behavior: "smooth" });
+  document.querySelector(att)?.scrollIntoView({ behavior: "smooth" });
 
   // console.log(+window.screenY);
 });
@@ -196,9 +196,24 @@ localeFunc = (locale) => {
 
 console.log(window.screen);
 
-if (window.screen.width <= 769) {
-  const img = document.querySelectorAll(".img");
-  img.forEach((img) => {
-    img.remove();
-  });
-}
+// if (window.screen.width <= 769) {
+//   const img = document.querySelectorAll(".img");
+//   img.forEach((img) => {
+//     img.remove();
+//   });
+// }
+
+// media query
+
+console.log("width", window.screen.width);
+console.log("screen", window.screen);
+
+// if (window.screen.width === 1024) {
+//   const header = document.querySelector(".header");
+//   const html = `<i  class="fa-solid fa-bars fa-2x menu"></i>`;
+
+//   // html.classList;
+//   // console.log(header.getAttribute);
+
+//   header.insertAdjacentHTML("afterbegin", html);
+// }

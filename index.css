@@ -34,6 +34,7 @@
   --footer-bg--: rgb(77, 59, 59);
   --dark-node--: rgb(85, 87, 85);
   --dynamic-border-left--: 5px solid black;
+  --social-a-color--: black;
 }
 
 .roots {
@@ -43,6 +44,8 @@
   --bg-color: rgb(33, 36, 33);
   --color--: white;
   --sticky-bg--: rgba(64, 58, 49, 0.951);
+  /* --box-shadow-1px--: 1px 1px 10px rgba(103, 120, 103, 0.22); */
+  /* --box-shadow-1px--: 1px 1px 10px green; */
   --box-shadow-1px--: 1px 1px 10px black;
   --logo-linear-grad--: linear-gradient(
     to right,
@@ -63,6 +66,7 @@
   --footer-bg--: rgb(77, 59, 59);
   --dark-node--: #fff;
   --dynamic-border-left--: 5px solid rgb(147, 139, 139);
+  --social-a-color--: var(--li-color--);
 
   transition: --small--row-height-- var(--transition-duration),
     --row-height-- var(--transition-duration),
@@ -110,8 +114,9 @@ main {
   height: 20px;
   background-color: var(--dark-node--);
   border-radius: 25px;
+  box-shadow: var(--box-shadow-1px--);
 
-  border: 2px solid rgb(221, 17, 17);
+  border: 2px solid var(--li-color--);
 }
 
 .dark-mode-btn2 {
@@ -267,13 +272,23 @@ a {
 
 .about-section {
   display: flex;
-  border-bottom: var(--sectn-border-bottom--);
   justify-content: center;
   align-items: center;
   height: fit-content;
   padding: 20px;
 }
 
+.border-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.border-bottom > div {
+  width: 80%;
+  border-bottom: var(--sectn-border-bottom--);
+}
 /* .about-section-article { */
 /* height: calc(100vh - 150px); */
 
@@ -333,9 +348,33 @@ h1,
 }
 
 .social a {
-  color: var(--black-color--);
+  color: var(--social-a-color--);
   text-decoration: none;
   text-align: center;
+}
+
+.proj-completed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150%;
+  margin-top: 20px;
+}
+
+.exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-years {
+  font-size: 30px;
+  font-weight: 900;
+}
+
+.worked {
+  white-space: wrap;
+  color: var(--li-color--);
 }
 
 .btn-container {
@@ -369,12 +408,11 @@ h1,
   display: flex;
   align-items: center;
   justify-content: center;
-  border-bottom: var(--sectn-border-bottom--);
   height: fit-content;
   padding: 20px;
   transition: all 0.8s ease-in;
   line-height: 1.5em;
-
+  flex-wrap: wrap;
   /* grid-template-columns: 1fr 1fr; */
 }
 
@@ -602,6 +640,20 @@ h1,
   border-radius: 15px;
 }
 
+.proficiency-section {
+  margin-top: 150px;
+  position: relative;
+}
+
+.proficiency-header {
+  /* margin-bottom: 40px; */
+  text-align: end;
+  position: absolute;
+  top: -100px;
+  left: 45%;
+  font-size: 50px;
+}
+
 .proficiency-section > article > .front {
   display: grid;
   grid-template-columns: 1fr;
@@ -667,7 +719,7 @@ h1,
 
 .project {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -757,160 +809,64 @@ i:hover {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
-/* 
-@media (max-width: 1536px) {
+
+/* @media (max-width: 1536px) {
   .container {
     max-width: 1280px;
   }
-
-  body {
-    font-size: 20px;
-  }
-
-  .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 85%;
-  }
-
-  .tab .tab-child a {
-    font-size: larger;
-    letter-spacing: 1px;
-    transition: all ease-in 0.6s;
-  }
 } */
 
-/* @media (max-width: 1280px) {
-  .container {
-    max-width: 1024px;
-  }
+/* @media (max-width: 1280px) { */
+/* .container { */
+/* max-width: 1024px; */
+/* position: relative; */
+/* } */
 
-  .logo {
-    background-image: linear-gradient(
-      to right,
-      rgb(237, 229, 229),
-      rgb(169, 111, 111)
-    );
-    box-shadow: 1px 1px 10px black;
+/* .logo {
+    background-image: var(--logo-linear-grad--);
+    box-shadow: var(--box-shadow-1px--);
     padding: 10px;
     border-radius: 5px;
-    font-size: medium;
-  }
+    margin-right: 10px;
+  } */
 
-  .header-section {
+/* .header-section {
+    width: auto;
+  } */
+
+/* .header-section {
+    display: block;
+    /* justify-content: space-between;
+    align-items: center; */
+/* width: 80%; */
+/* position: relative; 
+  }
+  */
+
+/* .tab {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 95%;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+    white-space: wrap;
+    border: 1px solid black;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    height: 300px;
   }
 
-  .about-section-article {
-    height: fit-content;
-    padding: 30px;
-  }
+  .menu {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+  } */
+/* } */
 
-  h1,
-  .about-header {
-    text-align: center;
-    font-size: 2rem;
-    margin-bottom: 0px;
-  }
-
-  .footer > .footer-article {
-    height: 100px;
-    align-items: center;
-    display: flex;
-    justify-content: space-evenly;
-  }
-} */
-/* 
 @media (max-width: 1024px) {
   .container {
     max-width: 768px;
   }
-  body {
-    font-size: 1.1rem;
-  }
-
-  .header-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    flex-direction: column;
-    gap: 23px;
-  }
-
-  .tab {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    width: 500px;
-    white-space: nowrap;
-  }
-
-  .sticky {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 150px;
-    padding: 50px 0;
-    background-color: rgba(233, 229, 222, 0.951);
-  }
-
-  .proficiency-section article .front div {
-    background-color: rgb(201, 221, 238);
-    width: 300px;
-    height: 10px;
-    border-radius: 25px;
-    box-shadow: 1px 1px 5px black;
-  }
-
-  .proficiency-section > article > .front > div > p {
-    width: 200px;
-    height: 10px;
-    border-radius: 25px;
-    background-color: rgb(199, 161, 234);
-  }
-
-  .proficiency-section > article > .prog > div > p {
-    width: 150px;
-    height: 10px;
-    border-radius: 25px;
-    background-color: rgb(199, 161, 234);
-  }
-
-  .proficiency-section > .proficiency-section-article > p {
-    height: 250px;
-    width: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .project {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .section-1024,
-  .section {
-    height: auto;
-  }
-
-  .project-details {
-    min-height: 300px;
-    padding: 30px;
-  }
-
-  .footer > .footer-article {
-    width: 100%;
-  }
-
-
 }
 
 @media (max-width: 768px) {
@@ -929,4 +885,4 @@ i:hover {
   .container {
     max-width: 100%;
   }
-} */
+}
