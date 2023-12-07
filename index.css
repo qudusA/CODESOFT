@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   /* font-family: "Roboto", sans-serif, Georgia, Futura, Lato; */
-  /* font-family: "Ubuntu Condensed", sans-serif; */
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -90,11 +90,10 @@
 }
 
 main {
-  /* background-color: #f0f0f0c1; */
   background-color: var(--bg-color);
   color: var(--color--);
   position: relative;
-  font-weight: 100;
+  font-family: "Poppins", sans-serif;
 }
 
 .header {
@@ -164,6 +163,7 @@ main {
 
 a {
   text-decoration: none;
+  color: var(--color--);
 }
 
 .header-section {
@@ -194,7 +194,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  width: 200px;
+  width: 400px;
   padding: 0 10px;
   position: absolute;
   height: 220px;
@@ -208,7 +208,7 @@ a {
 }
 
 .resize-tab .tab-child {
-  width: 120px;
+  width: 200px;
   white-space: nowrap;
   cursor: pointer;
   background-color: var(--tab-child-bg--);
@@ -217,6 +217,11 @@ a {
   border: none;
   box-shadow: var(--box-shadow-1px--);
   display: block;
+  font-size: 1.2rem;
+}
+
+.resize-tab .tab-child a {
+  color: #000000;
 }
 
 .tab .tab-child {
@@ -326,35 +331,25 @@ a {
   width: 80%;
   border-bottom: var(--sectn-border-bottom--);
 }
-/* .about-section-article { */
-/* height: calc(100vh - 150px); */
-
-/* width: 120%; */
-/* } */
 
 .about-section-article-div {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  /* margin-top: 100px; */
-  /* height: 600px; */
-  /* gap: 100px; */
 }
-
-/* .about-section-article p {
-} */
 
 h1,
 .about-header {
   text-align: center;
   font-size: 2rem;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .about {
   padding: 10px 0;
   line-height: 1.5em;
+  margin-bottom: 20px;
 }
 .about-section-img-article {
   display: flex;
@@ -414,7 +409,7 @@ h1,
 
 .worked {
   white-space: wrap;
-  color: var(--li-color--);
+  color: rgb(96, 174, 96);
 }
 
 .btn-container {
@@ -774,7 +769,8 @@ h1,
 
 .project-details {
   width: 300px;
-  height: 400px;
+  min-height: 400px;
+  max-height: fit-content;
   box-shadow: var(--box-shadow-1px--);
   text-align: center;
   padding: 10px;
@@ -882,6 +878,7 @@ i:hover {
   margin-right: auto;
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+  font-size: 1.1rem;
 }
 
 @media (max-width: 1224px) {
