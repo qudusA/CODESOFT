@@ -810,7 +810,7 @@ h1,
 
 .footer > .footer-article {
   height: 100px;
-  width: 80%;
+  width: 90%;
   align-items: center;
   display: flex;
   justify-content: space-evenly;
@@ -938,7 +938,7 @@ i:hover {
   .footer > .footer-article {
     /* height: 100px; */
     display: flex;
-    width: 80%;
+    width: 90%;
     align-items: center;
     display: flex;
     justify-content: space-evenly;
