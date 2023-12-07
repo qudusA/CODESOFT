@@ -194,26 +194,14 @@ localeFunc = (locale) => {
   }
 };
 
-console.log(window.screen);
-
-// if (window.screen.width <= 769) {
-//   const img = document.querySelectorAll(".img");
-//   img.forEach((img) => {
-//     img.remove();
-//   });
-// }
-
 // media query
 
-console.log("width", window.screen.width);
-console.log("screen", window.screen);
+const menuBar = document.querySelector(".menu-bar");
+const resizTab = document.querySelector(".resize-tab");
+const menu = document.querySelector(".fa-bars");
 
-// if (window.screen.width === 1024) {
-//   const header = document.querySelector(".header");
-//   const html = `<i  class="fa-solid fa-bars fa-2x menu"></i>`;
-
-//   // html.classList;
-//   // console.log(header.getAttribute);
-
-//   header.insertAdjacentHTML("afterbegin", html);
-// }
+menuBar.addEventListener("click", () => {
+  console.log("hi");
+  const isOpen = resizTab.classList.toggle("open");
+  menu.classList = isOpen ? "fa-solid fa-x fa-2x" : "fa-solid fa-bars fa-2x";
+});
