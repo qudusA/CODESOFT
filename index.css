@@ -194,17 +194,41 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 10px;
-  width: 400px;
+  width: 300px;
   padding: 0 10px;
   position: absolute;
-  height: 220px;
+  height: 250px;
   top: 150px;
   left: 5px;
   background-color: #00000018;
   backdrop-filter: blur(15px);
   border-radius: 0 0 10px 10px;
-  opacity: 0;
   visibility: hidden;
+  align-items: center;
+  opacity: 0;
+  /* animation: opacit 0.3s forwards; */
+}
+
+@keyframes opacit {
+  0% {
+    top: 0;
+    height: 0%;
+  }
+
+  50% {
+    top: 0;
+    height: 0%;
+  }
+
+  100% {
+    height: 150px;
+    top: 150px;
+  }
+}
+
+.open {
+  opacity: 1;
+  visibility: visible;
 }
 
 .resize-tab .tab-child {
@@ -865,11 +889,6 @@ h1,
 
 i:hover {
   color: blue;
-}
-
-.open {
-  opacity: 1;
-  visibility: visible;
 }
 
 .container {
